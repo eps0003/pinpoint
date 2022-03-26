@@ -1,0 +1,11 @@
+{
+	"apiToken": "get api token from https://ipinfo.io/",
+	"reconnectTime": 30,
+	"servers": [
+		{
+			"address": "127.0.0.1",
+			"port": "50301",
+			"rconPassword": "p455w0rd"
+		}
+	]
+}

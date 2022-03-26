@@ -1,0 +1,20 @@
+{
+	"name": "pinpoint",
+	"version": "1.0.0",
+	"author": "epsilon",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "rimraf build && tsc",
+		"start": "node .",
+		"debug": "ts-node src/index.ts"
+	},
+	"dependencies": {
+		"node-ipinfo": "^3.0.2"
+	},
+	"devDependencies": {
+		"@types/lru-cache": "^7.5.0",
+		"@types/node": "^17.0.22",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.7.0"
+	}
+}
