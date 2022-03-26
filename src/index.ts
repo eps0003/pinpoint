@@ -26,8 +26,11 @@ try {
 			}
 
 			const ipInfo = await ipinfoWrapper.lookupIp(ip);
-			if (ipInfo.countryCode) {
-				server.sendTCPR(`getRules().set_string("${id} code",'${ipInfo.countryCode}');`);
+			if (ipInfo.countryCode && ipInfo.country && ipInfo.region) {
+				let message = `getRules().set_string("${id} code",'${ipInfo.countryCode}');`;
+				message += `getRules().set_string("${id} country",'${ipInfo.country}');`;
+				message += `getRules().set_string("${id} region",'${ipInfo.region}');`;
+				server.sendTCPR(message);
 			}
 		});
 	}
