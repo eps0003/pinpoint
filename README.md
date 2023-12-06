@@ -1,6 +1,6 @@
 # Pinpoint
 
-This program fetches and sends player location data to connected KAG servers. It is currently used for displaying country flags on the scoreboard.
+A [King Arthur's Gold](https://kag2d.com/) mod that displays player country flags on the scoreboard. This is accomplished by sending the player's IP address to a backend program which retrieves the player's country and sends it back to KAG to display. The backend program does not keep maintain a record or player IP addresses and is solely used to retrieve the player's country.
 
 ## Prerequisites
 
